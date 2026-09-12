@@ -1,0 +1,102 @@
+{
+  "NS中文网_账号.py": {
+    "cron": "10 8 * * *",
+    "body": "4b61b480e50f254a5cfd6fd1bd9bebee3f6b18aefed613c3d136b13813a27055",
+    "updated": "2026-09-12"
+  },
+  "Switch520_账号.py": {
+    "cron": "15 8,20 * * *",
+    "body": "7735eba89ad63a352fcf6ad3adc52a2951d272bf9e2b39142856e9c1f728780d",
+    "updated": "2026-09-12"
+  },
+  "七日杀中文网_账号.py": {
+    "cron": "50 7 * * *",
+    "body": "f5ac0160426962286cd114b5b73e708d1705dd18c375ec3a3aa64d5690bff679",
+    "updated": "2026-09-12"
+  },
+  "再漫画_账号.py": {
+    "cron": "5 8 * * *",
+    "body": "dc2c637a97e47069cba5d1b3bf45981da858ba148cca784c95be61aaf1ce7fe7",
+    "updated": "2026-09-12"
+  },
+  "单机Game怀旧馆_账号.py": {
+    "cron": "20 7 * * *",
+    "body": "4f62ea0e4c211033ece437958414066599d786cab347a8e905cde123c94034cc",
+    "updated": "2026-09-12"
+  },
+  "宽带技术网_Cookie.py": {
+    "cron": "35 7 * * *",
+    "body": "685a41cf05c884a63de8e6d5eb531aaf5ca1b95f1653591bc96a94a73d73000f",
+    "updated": "2026-09-12"
+  },
+  "数码之家_Cookie.py": {
+    "cron": "55 7 * * *",
+    "body": "a0a51ab77b357af189fa74bed936f11f771aa0a8a0ce1ea2e781756ab626aadb",
+    "updated": "2026-09-12"
+  },
+  "柚坛社区_账号.py": {
+    "cron": "0 8 * * *",
+    "body": "fb89f5eb0316ff9fc66534df3ea8dd43ece906c5b2852b3d58c9f9afd0b2db29",
+    "updated": "2026-09-12"
+  },
+  "流星社区_账号.py": {
+    "cron": "40 7 * * *",
+    "body": "65c0d7b0169bfcd80dfa9a08e828959cd8c63930bfea75009aac6b5bff5cbd60",
+    "updated": "2026-09-12"
+  },
+  "爱桌游_账号.py": {
+    "cron": "10 7 * * *",
+    "body": "e8704eaa3dc6d794a5d169fe6af5fd331cf66d82cead1aab2e9604efa7edb8fc",
+    "updated": "2026-09-12"
+  },
+  "爱阅书吧_Cookie.py": {
+    "cron": "5 7 * * *",
+    "body": "aa6375dcb51bd3c7aea210ea794b02bf16a082f1f065050569a77aeb6094556f",
+    "updated": "2026-09-12"
+  },
+  "父子被窝_账号.py": {
+    "cron": "30 7,19 * * *",
+    "body": "a252948d15d907fa2c4258d2199bededcc8effed3f9a801e82bf7ffc7e115478",
+    "updated": "2026-09-12"
+  },
+  "飞牛私有云社区_Cookie.py": {
+    "cron": "25 7 * * *",
+    "body": "d26789f11dd31183d92281b9e354ace46b1520b4ec744d69dd44363b185b5fb8",
+    "updated": "2026-09-12"
+  },
+  "木木云盘搜_账号.py": {
+    "cron": "0 7 * * *",
+    "body": "a0b096d7064cb853fbb763df5b30c466befb48cc46722567f9c16a004b1cfe9d",
+    "updated": "2026-09-12"
+  },
+  "咸鱼单机_账号.py": {
+    "cron": "20 8 * * *",
+    "body": "ec80c4fdbcdfb3059f5a34c43e14b1546dc9beec4c79b70430baf8acdb96a469",
+    "updated": "2026-09-12"
+  },
+  "七玩网_账号.py": {
+    "cron": "35 8 * * *",
+    "body": "9ae0185b19440bb16c45d45442a3abb4df9778855328069d09b09bb8433bebe4",
+    "updated": "2026-09-12"
+  },
+  "恩山无线论坛_Cookie.py": {
+    "cron": "15 7 * * *",
+    "body": "90ec7d6868da4d27f687ea4a05c0f3fb70a92fe1f45fed123d1af1f6605138ed",
+    "updated": "2026-09-12"
+  },
+  "梦楠分享_账户.py": {
+    "cron": "15 13 * * *",
+    "body": "34c1ae200b94fe52ac7afd418c976140284c9aed60bb69f99449527e15b2fbe4",
+    "updated": "2026-09-12"
+  },
+  "边界AI_账号.py": {
+    "cron": "15 18 * * *",
+    "body": "40734d67fd1bee9aefd8b4280539435b1a9a9fc8af9f0e8188cbed49d85a8c37",
+    "updated": "2026-09-12"
+  },
+  "嘉立创_Cookie.py": {
+    "cron": "45 7 * * *",
+    "body": "1d8467c4a0ea8b9816522d29d397ea6fdb11c9d3999a99f5a48b63285f3fe9b0",
+    "updated": "2026-09-12"
+  }
+}

@@ -1,0 +1,59 @@
+# ============================================================================
+# Arcadia 代码同步配置 —— Arcadia_Task（可直接整文件使用）
+# ============================================================================
+# 用法：
+#   1) 将此文件整体复制并覆盖到容器内的  /arcadia/config/sync.yaml；
+#   2) 执行  arcadia update repo  生效（或在面板【环境配置 → 代码同步】可视化编辑保存）。
+#
+# 字段依据官方文档核对（Release 1.0.1）：
+#   - repo 段：https://arcadia.cool/docs/sync/repo
+#   - raw 段 / global.rawDependencyFilter：https://arcadia.cool/docs/sync/raw
+#
+# 说明：
+#   - 本仓库为公开仓库（isPrivate: false），url 填的是当前远端地址，可直接拉取；
+#   - 任务只在检测到「文件新增/删除」时同步，因此首次克隆时必须已开
+#     cronSettings.updateTaskList: true（本文件默认开启）；首次克隆之后才开开关无效，
+#     需删除该仓库全部任务 + 删除 /arcadia/repo/Neo-403_Arcadia_Task 后重新 update；
+#   - 定时规则取自各脚本文件头部注释里的 cron（由 tools/生成定时头.py 维护，
+#     例如 "爱阅书吧_Cookie.py" 为每天 07:05），脚本内没有合法 cron 时 Arcadia 会随机
+#     生成"每天执行一次"；
+#   - 若你的 Arcadia 之前已配置过其它代码仓库/远程文件，请勿整文件覆盖，只把下方
+#     repo: 列表里这一条并入已有的 sync.yaml 即可（raw/global 按你原有内容保留）。
+# ============================================================================
+
+# 代码仓库配置
+repo:
+  - name: Arcadia_Task                     # 仓库别名（面板显示名），可自定义
+    url: 'https://github.com/Neo-403/Arcadia_Task.git'
+    branch: main
+    enable: true
+    isPrivate: false                       # 本仓库公开；私有仓库需补 authSettings（ssh/http+Token）
+    cronSettings:
+      updateTaskList: true                 # 检测文件变动并为代码文件自动生成/删除系统定时任务
+      scriptsPath: 'ZWZW'                  # 匹配子目录；空格分隔多路径，'/'=仓库根，只匹配该层不递归
+      scriptsType:                         # 识别的脚本后缀（不填默认 js/py/ts），此处仅纳入 Python
+        - py
+      whiteList: '.*\.py$'                 # 文件名白名单（grep -E 正则，多表达式用 |；务必用单引号防 YAML 转义）
+      blackList: ''                        # 文件名黑名单（同样 grep -E 正则；需要排除时填写）
+      autoDisable: false                   # true=新任务自动禁用（只登记不执行，便于逐个确认）
+      addNotify: true                      # 新增定时任务时推送通知
+      delNotify: true                      # 过期定时任务删除时推送通知
+
+# 远程单文件配置（本仓库使用整仓 repo 模式，此处留空）
+# raw 用于从单个文件 URL（GitHub raw / jsDelivr 等）下载脚本到 /arcadia/raw；
+# 需要时改为：
+#   raw:
+#     - name: my_script
+#       url: 'https://raw.githubusercontent.com/xxx/xxx/master/example.py'
+#       fileName: 'example.py'             # 可选，默认截取 URL 中的文件名
+#       cronSettings:
+#         updateTaskList: true             # 同样按文件头部注释 cron 建任务
+# 生效命令为  arcadia update raw
+raw: []
+
+# 全局配置
+global:
+  # raw 目录只允许存在已配置的脚本文件，其它文件会被清理；
+  # 若运行 raw 脚本还需要额外的依赖文件，用该正则把它们保留下来（grep -E，| 分隔多表达式）。
+  # 本仓库纯 repo 模式不涉及，留空即可。
+  rawDependencyFilter: ''

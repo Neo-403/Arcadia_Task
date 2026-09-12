@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+*.swp
+*.har
+Thumbs.db
+
+# 签到脚本运行时生成的 cookie 缓存（账号模式登录缓存，不入库）
+*.cookie_cache.json
+
+# CodeBuddy 会话/团队/记忆数据（本地保留，不入库）
+.codebuddy/
